@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-17T23:34:20.940732Z",
+  "total_input": 4,
+  "valid_transactions": 4,
+  "approved": 0,
+  "rejected": 0,
+  "flagged": 1,
+  "invalid": 0,
+  "already_posted": 3,
+  "reports": [
+    {
+      "invoice_id": "INV-101",
+      "vendor_name": "Titan Steel",
+      "description": "12mm deformed steel bars Grade 60 supply",
+      "amount": "4500",
+      "cost_code": "MAT-03",
+      "status": "ALREADY POSTED",
+      "is_valid": true,
+      "validation_errors": [],
+      "matched_rule": "SECTION 03: Grade 60 Rebar, mesh reinforcement, and ready-mix pouring are MATERIAL COSTS [Code: MAT-03].",
+      "rule_metadata": {
+        "cost_code": "MAT-03",
+        "category": "materials",
+        "section": "03",
+        "source": "spec_rules.txt"
+      },
+      "nearest_distance": 0.6672940850257874,
+      "distance_cutoff": 0.76,
+      "budget": "50000",
+      "spent_before": "4500",
+      "remaining_before": "45500",
+      "remaining_after": "45500",
+      "tool_calls": [
+        "lookup_spec_rule",
+        "check_budget_ledger"
+      ],
+      "reasoning_mode": "local_tool_planner",
+      "audit_reason": "RAG distance 0.6673 is within the 0.7600 cutoff; ledger reports already posted."
+    },
+    {
+      "invoice_id": "INV-102",
+      "vendor_name": "DigForce Co",
+      "description": "CAT 320 Excavator wet hire 40 hours trenching",
+      "amount": "6200",
+      "cost_code": "EQ-31",
+      "status": "ALREADY POSTED",
+      "is_valid": true,
+      "validation_errors": [],
+      "matched_rule": "SECTION 31: Excavator rentals, backhoe operations, grading, and site trenching are EQUIPMENT COSTS [Code: EQ-31].",
+      "rule_metadata": {
+        "cost_code": "EQ-31",
+        "category": "equipment",
+        "section": "31",
+        "source": "spec_rules.txt"
+      },
+      "nearest_distance": 0.46881192922592163,
+      "distance_cutoff": 0.76,
+      "budget": "40000",
+      "spent_before": "6200",
+      "remaining_before": "33800",
+      "remaining_after": "33800",
+      "tool_calls": [
+        "lookup_spec_rule",
+        "check_budget_ledger"
+      ],
+      "reasoning_mode": "local_tool_planner",
+      "audit_reason": "RAG distance 0.4688 is within the 0.7600 cutoff; ledger reports already posted."
+    },
+    {
+      "invoice_id": "INV-103",
+      "vendor_name": "Apex Finishes",
+      "description": "Two coats exterior weather-shield paint application",
+      "amount": "3100",
+      "cost_code": "LAB-09",
+      "status": "ALREADY POSTED",
+      "is_valid": true,
+      "validation_errors": [],
+      "matched_rule": "SECTION 09: Structural painting, scaffolding setup, wall finishes, and surface preparation are LABOR COSTS [Code: LAB-09].",
+      "rule_metadata": {
+        "cost_code": "LAB-09",
+        "category": "labor",
+        "section": "09",
+        "source": "spec_rules.txt"
+      },
+      "nearest_distance": 0.7420092225074768,
+      "distance_cutoff": 0.76,
+      "budget": "30000",
+      "spent_before": "3100",
+      "remaining_before": "26900",
+      "remaining_after": "26900",
+      "tool_calls": [
+        "lookup_spec_rule",
+        "check_budget_ledger"
+      ],
+      "reasoning_mode": "local_tool_planner",
+      "audit_reason": "RAG distance 0.7420 is within the 0.7600 cutoff; ledger reports already posted."
+    },
+    {
+      "invoice_id": "INV-104",
+      "vendor_name": "Global Supply",
+      "description": "Unexpected site security and emergency cleanup logistics",
+      "amount": "8000",
+      "cost_code": null,
+      "status": "FLAGGED - HUMAN AUDIT REQUIRED (No Matching Spec Class)",
+      "is_valid": true,
+      "validation_errors": [],
+      "matched_rule": "SECTION 31: Excavator rentals, backhoe operations, grading, and site trenching are EQUIPMENT COSTS [Code: EQ-31].",
+      "rule_metadata": {
+        "cost_code": "EQ-31",
+        "category": "equipment",
+        "section": "31",
+        "source": "spec_rules.txt"
+      },
+      "nearest_distance": 0.7816481590270996,
+      "distance_cutoff": 0.76,
+      "budget": null,
+      "spent_before": null,
+      "remaining_before": null,
+      "remaining_after": null,
+      "tool_calls": [
+        "lookup_spec_rule"
+      ],
+      "reasoning_mode": "local_tool_planner",
+      "audit_reason": "Nearest rule distance 0.7816 exceeds the 0.7600 out-of-distribution cutoff."
+    }
+  ]
+}

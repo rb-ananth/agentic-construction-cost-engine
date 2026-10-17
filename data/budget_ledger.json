@@ -1,0 +1,21 @@
+{
+  "budgets": {
+    "MAT-03": "50000",
+    "EQ-31": "40000",
+    "LAB-09": "30000"
+  },
+  "approved_transactions": {
+    "INV-101": {
+      "cost_code": "MAT-03",
+      "amount": "4500"
+    },
+    "INV-102": {
+      "cost_code": "EQ-31",
+      "amount": "6200"
+    },
+    "INV-103": {
+      "cost_code": "LAB-09",
+      "amount": "3100"
+    }
+  }
+}

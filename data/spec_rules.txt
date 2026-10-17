@@ -1,0 +1,3 @@
+SECTION 03: Grade 60 Rebar, mesh reinforcement, and ready-mix pouring are MATERIAL COSTS [Code: MAT-03].
+SECTION 31: Excavator rentals, backhoe operations, grading, and site trenching are EQUIPMENT COSTS [Code: EQ-31].
+SECTION 09: Structural painting, scaffolding setup, wall finishes, and surface preparation are LABOR COSTS [Code: LAB-09].

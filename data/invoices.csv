@@ -1,0 +1,5 @@
+invoice_id,vendor_name,raw_description,amount
+INV-101,Titan Steel,"12mm deformed steel bars Grade 60 supply",4500
+INV-102,DigForce Co,"CAT 320 Excavator wet hire 40 hours trenching",6200
+INV-103,Apex Finishes,"Two coats exterior weather-shield paint application",3100
+INV-104,Global Supply,"Unexpected site security and emergency cleanup logistics",8000

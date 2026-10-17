@@ -1,0 +1,18 @@
+# Secrets and local security configuration
+.env
+.env.*
+!.env.example
+mcp_config.json
+.vscode/mcp_config.json
+
+# Python environments and caches
+__pycache__/
+.venv/
+*.pyc
+
+# Generated local databases and temporary files
+data/vector_store/
+*.tmp
+
+# OS/editor files
+.DS_Store
