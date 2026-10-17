@@ -158,6 +158,12 @@ Tests cover strict input contracts, budget arithmetic and idempotency,
 out-of-distribution routing, exported invalid-input reports, and the model
 tool-calling loop.
 
+## Logging
+
+The pipeline uses Python's standard logging configuration. Set `LOG_LEVEL` to
+`DEBUG`, `INFO`, `WARNING`, or `ERROR` to adjust verbosity; the default is
+`INFO`.
+
 ## Security and operational notes
 
 - Do not commit `.env` files, credentials, local environments, or Chroma's
