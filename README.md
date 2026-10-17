@@ -124,6 +124,28 @@ checked-in dataset. This is a demonstration value, not a universal confidence
 threshold. Calibrate the cutoff against representative, labeled invoices and
 specification rules before operational use.
 
+For a different cutoff or data directory, configure the engine and orchestrator
+in Python:
+
+```python
+from pathlib import Path
+
+from agent import CostAuditOrchestrator
+from engine import CostRuleEngine
+
+project_data = Path("data")
+rule_engine = CostRuleEngine(
+    rules_path=project_data / "spec_rules.txt",
+    vector_store_path=project_data / "vector_store",
+    distance_cutoff=0.76,
+)
+auditor = CostAuditOrchestrator(
+    rule_engine=rule_engine,
+    data_dir=project_data,
+)
+report = auditor.run(project_data / "invoices.csv")
+```
+
 ## Tests
 
 Run the focused test suite:
